@@ -50,7 +50,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
             cold_count = cold_count + 1;
         }
 
-	function resultsCalculator(){
+	function results(){
 		var resultText = document.getElementById("results");
 		var allergyPercent = allergy_count/(allergy_count+cold_count)*100;
 		var coldPercent = cold_count/(allergy_count+cold_count)*100;
@@ -154,8 +154,9 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		<a onclick="resultsCalculator();" class="w3-btn w3-black">Results</a>
 	</div>
 </div>
+	
 <div class="page" id="results">
-	<div resultsCalculator();
+	<div results();
 	</div>
 </div>
 	
