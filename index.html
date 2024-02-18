@@ -53,7 +53,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	function results(){ //function used to calculate results: the percentage of having an allergy and the percentage of having a cold//
 		var resultText = document.getElementById("results"); //declares variable that turns results into text//
 		var allergyPercent = (allergy_count/4)*100; //declares a variable that displays allergy percentage, the equation on the right divides allergy count by total allergy count of 4 multiplied by 100 to calculate percentage//
-		var coldPercent = (cold_count/4)*100; //declares a variable that displays cold percentage, the equation on the right divides allergy count by total cold count of 4 multiplied by 100 to calculate percentage//
+		var coldPercent = (cold_count/4)*100; //declares a variable that displays cold percentage, the equation on the right divides cold count by total cold count of 4 multiplied by 100 to calculate percentage//
 		resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent; //changes what is between the <p id="results"></p> tags in the results page//
 	}
 	
@@ -139,8 +139,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	<div id="content" class="w3-container"> <!--creates white page background-->
 	<p>Are your symptoms seasonal or chronic?</p> <!--displays Question 4 on page 4-->
-		<a href="#five"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a> <!--creates a button that runs coldAdd() function and adds 1 to cold count when clicked which leads to page 5-->
-		<a href="#five"  onclick="coldAdd();" class="w3-btn w3-black">No</a> <!--creates a button that runs AllergyAdd() function and adds 1 to allergy count when clicked which leads to page 5-->
+		<a href="#five"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a> <!--creates a button that runs allergyAdd() function and adds 1 to allergy count when clicked which leads to page 5-->
+		<a href="#five"  onclick="coldAdd();" class="w3-btn w3-black">No</a> <!--creates a button that runs coldAdd() function and adds 1 to cold count when clicked which leads to page 5-->
 	</div> <!--divides page-->
 </div> <!--divides page-->
 
